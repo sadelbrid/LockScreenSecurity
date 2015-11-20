@@ -38,6 +38,8 @@ public class LockScreen extends Activity implements LockScreenUtils.OnLockStatus
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lock_screen);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
         lockScreenUtils = new LockScreenUtils();
         btnUnlock = (Button) findViewById(R.id.btnUnlock);
         btnUnlock.setOnClickListener(new View.OnClickListener() {

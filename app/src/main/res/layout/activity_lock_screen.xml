@@ -16,15 +16,25 @@
         android:textAppearance="@android:style/TextAppearance.Medium"
         android:textColor="#000000" />
 
+
     <Button
         android:id="@+id/btnUnlock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:layout_below="@id/tvInstructions"
         android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
         android:text="unlock"
         android:textAppearance="@android:style/TextAppearance.Large"
         android:textColor="#eeeeee" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="4"
+        android:id="@+id/pinNumber"
+        android:layout_above="@+id/btnUnlock"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
